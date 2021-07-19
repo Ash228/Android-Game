@@ -110,8 +110,8 @@ public class Player implements Serializable {
         //position.y = Gdx.input.getY();
         if(Gdx.input.isTouched())
         {
-            position.x = Gdx.input.getY();
-            position.y = Gdx.input.getX();
+            position.x = Gdx.input.getX();
+            position.y = Gdx.input.getY();
         }
     }
 

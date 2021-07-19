@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.0" orientation="orthogonal" renderorder="right-down" width="32" height="8" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="1">
+ <tileset firstgid="1" source="../res/Room_Builder_free_16x16.tsx"/>
+ <tileset firstgid="392" source="../res/Interiors_free_16x16.tsx"/>
+ <layer id="1" name="floor" width="32" height="8">
+  <data encoding="base64" compression="zlib">
+   eJyzZ2BwcBgg7AjEegwMDB8ZGA58ALLpiYF2OhgA7Yba3wAUY6AnBtrJALP/8QDhUfsH3n57IHYYIAzMfwwA3CnFYQ==
+  </data>
+ </layer>
+ <layer id="2" name="doors" width="32" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgcQIOZgUETiLWAWJuZeHlhHGwRZjBu8ALSXljE0c23AIpbArEVEFtjsR+XvDIOtgozGDdEAekoLOKYNgwsCAK6K4ROOBhL+CYBxVLohJOx2D9SAQCKshzP
+  </data>
+ </layer>
+ <layer id="4" name="conflict" width="32" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFIx3MYR5YO2cPgP3Idq4ZAPsHwk5sAADJ2gPZ
+  </data>
+ </layer>
+ <layer id="3" name="upperconflict" width="32" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBh4EMTCwBDMgluMkDylIAloTjKSWTHMqGKE5CkFRUBzillwixGSpxTcpJI5pIBbSHa+HAD7Xw2AnYMRAACk8A3x
+  </data>
+ </layer>
+</map>

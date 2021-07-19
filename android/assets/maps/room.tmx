@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.0" orientation="orthogonal" renderorder="right-down" width="17" height="17" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="4">
+ <tileset firstgid="1" source="../res/Room_Builder_free_16x16.tsx"/>
+ <tileset firstgid="392" source="../res/Interiors_free_16x16.tsx"/>
+ <layer id="1" name="floor" width="17" height="17">
+  <data encoding="base64" compression="zlib">
+   eJyzZ2BwcKAAOwKxHgMDw3sg/YEM/BGIDYD6oWYwfCADA81ggJnxmAI8agZpZhCKc+S4xWPGaNwOYTPsgdgBD4apxSUPLD8YAAih43w=
+  </data>
+ </layer>
+ <layer id="2" name="base_conflict" width="17" height="17">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAOYGNjYGBng7B5mBkYeIGYjxnC72dhYJjAgil3Gyh2hwVhhhhQvzjUDBmgvCwQy0HNmA9Ut4AFU+41UOwNkhlqQP3qbNjduB6obgMLpjg3K9BdrJjiU5kYGKYB8XQm4sIAGcyBunspUO8yIF5Ohhmzkcxoo7IZDkBECBNhRsIjIPsxlC8KDFsxaPhyoMUBPjM+AdmfoXxVoH41qBkSRJoBAxOB6icBcTxQfwIQJwJxP5A/gY14MxYC1S4C4nyg3gIgLgTi+UD+AhqZsRWodxsQb0czYyNQ7SYgrgfqbQDiRiBeD+RvwGLGUaDeY0B8HMmMw0D2ESLSyxpm3HKXgfqvkJHmSAUAGhdClg==
+  </data>
+ </layer>
+ <objectgroup id="4" name="Object Layer 1"/>
+ <layer id="3" name="base_conflict1" width="17" height="17">
+  <data encoding="base64" compression="zlib">
+   eJxjYBiZIJ6JgSEBCScykW7GMiaGhCKgPhguJMIMAwJmEOMOdDPygXoKkDCyO7awYjdDloHhAGGbIOAIDjOGIjhBBb/cGEbhMRgAANHRDiw=
+  </data>
+ </layer>
+ <layer id="5" name="base_conflict2" width="17" height="17">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgF1AJhTAh2Cgvp+kVYGRjSkMwoIcMMFVbS9aADEzQzbpHhDnTwigpmHKeCGdepYAY1ADnpAx2Qkz4GIwAA3dwGbg==
+  </data>
+ </layer>
+</map>
