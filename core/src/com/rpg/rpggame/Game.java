@@ -51,7 +51,7 @@ public class Game extends ApplicationAdapter {
 		tiledMap = new TmxMapLoader().load("maps/reception.tmx");
 		tiledMapRenderer = new OrthogonalTiledMapRenderer(tiledMap);
 
-		texture = new Texture("maps/reception.png");
+		texture = new Texture("raw/reception.png");
 		texture.setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
 
 		TextureRegion region = new TextureRegion(texture, 0, 0, 512, 275);
@@ -63,16 +63,14 @@ public class Game extends ApplicationAdapter {
 
 		if(Gdx.files.local("player.dat").exists()){
 			try {
-				player = player.readPlayer();
-			} catch(ClassNotFoundException e){
-				e.printStackTrace();
-			} catch (IOException e){
+				player = Player.readPlayer();
+			} catch(ClassNotFoundException | IOException e){
 				e.printStackTrace();
 			}
 		} else{
-			player = new Player(new Vector2(Gdx.graphics.getWidth()/2, Gdx.graphics.getHeight()/2),"sprites/adam.png");
+			player = new Player(new Vector2(w/2, h/2),"sprites/adam.png");
 			try {
-				player.savePlayer(player);
+				Player.savePlayer(player);
 			} catch (IOException e){
 				e.printStackTrace();
 			}
@@ -100,7 +98,7 @@ public class Game extends ApplicationAdapter {
 	@Override
 	public void dispose () {
 		try {
-			player.savePlayer(player);
+			Player.savePlayer(player);
 		} catch (IOException e){
 			e.printStackTrace();
 		}

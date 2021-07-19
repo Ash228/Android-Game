@@ -26,88 +26,11 @@ public class Player implements Serializable {
 
     public Player(Vector2 position, String textureLoc){
         this.position = position;
-        texture = new Texture("maps/reception.png");
+        texture = new Texture("raw/reception.png");
     }
 
     public void update(){
-        //wsad input
-        /*if (Gdx.input.isKeyPressed(Keys.W)){
-            position.y +=  2f;
-        }
-        if (Gdx.input.isKeyPressed(Keys.A)){
-            position.x -=  2f;
-        }
-        if (Gdx.input.isKeyPressed(Keys.D)){
-            position.x +=  2f;
-        }
-        if (Gdx.input.isKeyPressed(Keys.S)){
-            position.y -=  2f;
-        }
 
-        if (Gdx.input.isTouched()){
-            System.out.println("Touched!");
-        }*/
-
-        //Accelerometer input
-
-
-
-/*      float accelX = Gdx.input.getAccelerometerX();
-        float accelY = Gdx.input.getAcceleromete java.io.Serializable;rY();
-
-
-        if (accelX > -1){
-            position.y -=  3f;
-        }
-        if (accelX < +1){
-            position.y +=  3f;
-        }
-
-        if Texture(accelY > -1){
-            position.x +=  3f;
-        }
-        if (accelY < +1){
-            position.x -=  3f;
-        }
-        */
-
-        /*float accelX = Gdx.input.getAccelerometerX();
-        float accelY = Gdx.input.getAccelerometerY();
-
-        if (accelX < -1){
-            position.y -=  accelX;
-        }
-        if (accelX > +1){
-            position.y -=  accelX;
-        }
-
-        if (accelY < -1){
-            position.x +=  accelY;
-        }
-        if (accelY > +1){
-            position.x +=  accelY;
-        }
-
-
-        if (accelX > 3){
-            System.out.println("x axis is " + accelX);
-        }
-
-        if (accelX < -3){
-            System.out.println("x axis is " + accelX);
-        }
-
-        if (accelY > 3){
-            System.out.println("y axis is " + accelX);
-        }
-
-        if (accelY < -3){
-            System.out.println("y axis is " + accelX);
-        }
-*/
-        //System.out.println("y axis is " + accelY);
-        //position.x = Gdx.input.getX();
-        //position.y = Gdx.input.getY();
         if(Gdx.input.isTouched())
         {
             position.x = Gdx.input.getX();
@@ -122,8 +45,6 @@ public class Player implements Serializable {
             file.writeBytes(serialize(marioPlayer), false);
         }catch(Exception ex){
             System.out.println(ex.toString());
-        }finally{
-            if(out != null) try{out.close();} catch (Exception ex){}
         }
 
         System.out.println("Saving Player");
@@ -156,7 +77,6 @@ public class Player implements Serializable {
     }
 
     public void setPosition(){
-        this.position = position;
     }
 
     public Texture getTexture()
