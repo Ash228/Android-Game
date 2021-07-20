@@ -61,20 +61,20 @@ public class Game extends ApplicationAdapter {
 		sprite.setPosition(-sprite.getWidth()/2,-sprite.getHeight()/2);
 
 
-		if(Gdx.files.local("player.dat").exists()){
-			try {
-				player = Player.readPlayer();
-			} catch(ClassNotFoundException | IOException e){
-				e.printStackTrace();
-			}
-		} else{
+//		if(Gdx.files.local("player.dat").exists()){
+//			try {
+//				player = Player.readPlayer();
+//			} catch(ClassNotFoundException | IOException e){
+//				e.printStackTrace();
+//			}
+//		} else{
 			player = new Player(new Vector2(w/2, h/2),"sprites/adam.png");
 			try {
 				Player.savePlayer(player);
 			} catch (IOException e){
 				e.printStackTrace();
 			}
-		}
+//		}
 	}
 
 	@Override
@@ -85,15 +85,16 @@ public class Game extends ApplicationAdapter {
 		player.update();
 
 
-		/*tiledMapRenderer.setView(camera);
+		tiledMapRenderer.setView(camera);
 		tiledMapRenderer.render();
-		batch.setProjectionMatrix(camera.combined);*/
+		batch.setProjectionMatrix(camera.combined);
 		batch.begin();
-		//sprite.draw(batch,x,y);
+//		sprite.draw(batch,x,y);
 		batch.draw(texture,player.getPosition().x,player.getPosition().y);
 		batch.end();
 
 	}
+
 	
 	@Override
 	public void dispose () {

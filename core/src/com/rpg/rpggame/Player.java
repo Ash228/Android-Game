@@ -35,6 +35,7 @@ public class Player implements Serializable {
         {
             position.x = Gdx.input.getX();
             position.y = Gdx.input.getY();
+            System.out.println("X:"+Gdx.input.getX()+"\nY:"+Gdx.input.getY());
         }
     }
 
